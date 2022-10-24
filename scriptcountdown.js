@@ -106,7 +106,7 @@ var Countdown = new Vue({
     setCountdown(date) {
 
       if (date) {
-        this.countdown = moment(date, '2022-10-05 12:00:00');
+        this.countdown = moment(date, '');
       } else {
         this.countdown = moment().endOf('day'); //this.$el.getAttribute('data-date');
       }
