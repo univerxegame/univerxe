@@ -134,7 +134,7 @@ var Countdown = new Vue({
         this.time.Seconds = t.seconds();
       }
 
-      this.time.Total = t;
+      this.time.Total = this.time;
 
       this.$broadcast('time', this.time);
       return this.time;
