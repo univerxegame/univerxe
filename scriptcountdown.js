@@ -63,7 +63,7 @@ var Countdown = new Vue({
     <tracker 
       v-for="tracker in trackers"
       :property="tracker"
-      :time="time"
+      :time=""
       v-ref:trackers
     ></tracker>
   </div>
@@ -95,7 +95,7 @@ var Countdown = new Vue({
 
   ready() {
     if (window['requestAnimationFrame']) {
-      this.setCountdown(this.date);
+      this.setCountdown();
       this.callback = this.callback || function () {};
       this.update();
     }
